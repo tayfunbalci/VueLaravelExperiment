@@ -18,7 +18,7 @@ class ArticleController extends Controller
     {
         //Get Articles
         $articles =  Article::orderBy('id', 'DESC')->get();
-        //test
+
         return ArticleResource::collection($articles);
     }
 
